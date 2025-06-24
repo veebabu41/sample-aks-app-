@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-aks-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sample-aks-app
+  template:
+    metadata:
+      labels:
+        app: sample-aks-app
+    spec:
+      containers:
+      - name: sample-aks-app
+        image: <your-container-registry>/sample-aks-app:latest
+        ports:
+        - containerPort: 80
