@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: veera123
+  name: veera12345
   labels:
-    app.kubernetes.io/name: veera123
-    app.kubernetes.io/part-of: veera123-project
+    app.kubernetes.io/name: veera12345
+    app.kubernetes.io/part-of: veera12345-project
     kubernetes.azure.com/generator: devhub
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: veera123
+    name: veera12345
   minReplicas: 1
   maxReplicas: 5
   metrics:
