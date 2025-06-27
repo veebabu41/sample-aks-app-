@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: veera12345
+  name: veerababu1234
   labels:
-    app.kubernetes.io/name: veera12345
+    app.kubernetes.io/name: veerababu1234
     kubernetes.azure.com/generator: devhub
-  namespace: sample-app-namespace-1750910701034
+  namespace: sample-app-namespace-1750999802323
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: veera12345
+      app.kubernetes.io/name: veerababu1234
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: veera12345
+        app.kubernetes.io/name: veerababu1234
     spec:
       containers:
-        - name: veera12345
-          image: veera.azurecr.io/image-workflow-1750910701019:latest
+        - name: veerababu1234
+          image: veera.azurecr.io/image-workflow-1750999802307:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -31,7 +31,7 @@ spec:
               memory: "1Gi"
           envFrom:
             - configMapRef:
-                name: veera12345-config
+                name: veerababu1234-config
             - secretRef:
                 name: secret-ref
                 optional: true
@@ -83,11 +83,11 @@ spec:
               topologyKey: kubernetes.io/hostname
               labelSelector:
                 matchLabels:
-                  app.kubernetes.io/name: veera12345
+                  app.kubernetes.io/name: veerababu1234
       topologySpreadConstraints:
         - maxSkew: 1
           topologyKey: kubernetes.io/hostname
           whenUnsatisfiable: ScheduleAnyway
           labelSelector:
             matchLabels:
-              app.kubernetes.io/name: veera12345
+              app.kubernetes.io/name: veerababu1234
