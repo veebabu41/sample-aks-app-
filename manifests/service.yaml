@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: veerababu1234
-  namespace: sample-app-namespace-1750999802323
+  name: babu12345
+  namespace: sample-app-namespace-1751257296798
   labels:
-    app.kubernetes.io/name: veerababu1234
+    app.kubernetes.io/name: babu12345
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app.kubernetes.io/name: veerababu1234
+    app.kubernetes.io/name: babu12345
   ports:
     - protocol: TCP
       port: 80
