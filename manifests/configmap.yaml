@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: veerababu1234-config
-  namespace: sample-app-namespace-1750999802323
+  name: veera12345-config
+  namespace: veeranewns
   labels:
-    app.kubernetes.io/name: veerababu1234
+    app.kubernetes.io/name: veera12345
     kubernetes.azure.com/generator: devhub
 data:
