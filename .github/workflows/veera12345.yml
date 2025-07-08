@@ -40,14 +40,14 @@ on:
 env:
   ACR_RESOURCE_GROUP: veera-rg
   AZURE_CONTAINER_REGISTRY: veera
-  CONTAINER_NAME: image-workflow-1750910701019
-  CLUSTER_NAME: veeranewaks
+  CONTAINER_NAME: image-workflow-1751952966003
+  CLUSTER_NAME: veera123456
   CLUSTER_RESOURCE_GROUP: veera-rg
   CLUSTER_RESOURCE_TYPE: Microsoft.ContainerService/managedClusters
   DEPLOYMENT_MANIFEST_PATH: ./manifests
   DOCKER_FILE: ./Dockerfile
   BUILD_CONTEXT_PATH: ./
-  NAMESPACE: sample-app-namespace-1750910701034
+  NAMESPACE: veeranewns
   ENABLENAMESPACECREATION: false
   AUTH_TYPE: SERVICE_PRINCIPAL
 

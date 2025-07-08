@@ -1,0 +1,13 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: veera12345
+  labels:
+    app.kubernetes.io/name: veera12345
+    app.kubernetes.io/part-of: veera12345-project
+    kubernetes.azure.com/generator: devhub
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: veera12345
